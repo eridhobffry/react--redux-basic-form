@@ -31,3 +31,17 @@ export const change = value => {
     value
   };
 };
+
+export const addTextOnList = value => {
+  return {
+    type: CONSTANTS.UPDATE_LIST,
+    value
+  };
+};
+
+export const saveList = value => {
+  return {
+    type: CONSTANTS.SAVE_LIST,
+    value
+  };
+};

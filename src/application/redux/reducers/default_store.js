@@ -6,5 +6,9 @@ export default {
     tempValue: {
       number: 0
     }
+  },
+  lists: {
+    text: "",
+    listArray: []
   }
 };
