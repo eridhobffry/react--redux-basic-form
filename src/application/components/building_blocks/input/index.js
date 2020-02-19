@@ -1,6 +1,13 @@
 import React from "react";
 
-const Input = ({ onChange, value, placeholder, type, name }) => {
+const Input = ({
+  onChange,
+  value,
+  placeholder,
+  type,
+  name,
+  onEnterToInputValue
+}) => {
   return (
     <input
       onChange={onChange}
@@ -8,6 +15,7 @@ const Input = ({ onChange, value, placeholder, type, name }) => {
       placeholder={placeholder}
       type={type}
       name={name}
+      onKeyPress={onEnterToInputValue}
     />
   );
 };

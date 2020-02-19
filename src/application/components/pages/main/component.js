@@ -16,8 +16,8 @@ const App = ({
 }) => {
   const [text, setText] = useState("");
 
-  const keyPressed = e => {
-    if (e.which === 13) {
+  const keyPressed = event => {
+    if (event.charCode === 13 || event.key === "Enter") {
       return onSaveList(lists.text);
     }
   };
@@ -56,7 +56,7 @@ const App = ({
         onChange={e => {
           onUpdateTextOnList(e.target.value);
         }}
-        onKeyPress={keyPressed}
+        onEnterToInputValue={keyPressed}
       />{" "}
       <br />
       <Button
